@@ -1,0 +1,81 @@
+#contenedor-exp-habilidades {
+    background-color: #f5f5f5c5;
+    padding: 0 10px;
+    margin: 0;
+    border: 1px solid black;
+    border-top: none; border-bottom: none;
+}
+#exp-edu {
+    padding: 0 4%;
+}
+#skills {
+    padding: 0 4%;
+}
+#fila-exp {
+    padding-bottom: 30px;
+}
+
+
+/* Skills */
+.barra {
+    width: 80%;
+    height: 25px;
+    background-color: #b8b8b8de;
+}
+.skills {
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.lenguaje {
+    font-size: 1rem;
+    font-weight: 500;
+}
+#habilidad {
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.nombre {
+    background-color: #119ab3;
+    animation: progresonombre 3s forwards;
+}
+.css {
+    background-color: #119ab3;
+    animation: progresocss 3s forwards;
+}
+.js {
+    background-color: #119ab3;
+    animation: progresojs 3s forwards;
+}
+
+@keyframes progresonombre {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+@keyframes progresocss {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+@keyframes progresojs {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+
+@media screen and (max-width: 575px){
+    #skills {
+        margin-top: 20px;
+    }
+    #skills > h2 {
+        border-top: 1px solid #00000041;
+        padding-top: 40px;
+    }
+    .barra {
+        width: 100%;
+    }
+}

@@ -1,0 +1,108 @@
+
+#contenedor-proyectos {
+    background-color: #f5f5f5c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2% 4% 75px;
+}
+#contenedor-proyectos > h2 {
+    width: 100%;
+    padding: 5px 0 20px;
+}
+.contenedor-carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    border-radius: 8px;
+}
+
+#boton-izq, #boton-der {
+    background-color: #00000000;
+    border: none;
+    transition: ease-out .3s;
+}
+#boton-izq {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#boton-der {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#boton-izq img, #boton-der img {
+    transition: ease-out .3s;
+}
+#boton-izq img:hover, #boton-der img:hover {
+    transform: scale(1.5);
+}
+
+
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+}
+.carta {
+    min-width: calc(25% - 10px);
+    margin: 0 5px;
+    padding: 5px 0;
+}
+.carta img {
+    width: 100%;
+    border: 1px solid #000000c2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* card scroll */
+.titulo-card p {
+    border: 1px solid #000000c2;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 8%;
+    width: 100%;
+    height: 140px;
+    font-weight: bold;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.titulo-card p span {
+    font-weight: 400;
+}
+.titulo-card p::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+    border-bottom-right-radius: 10px;
+}
+.titulo-card p::-webkit-scrollbar-thumb {
+    background-color: #00000049;
+    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.titulo-card p::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #8585856b;
+    border-bottom-right-radius: 10px;
+}
+/**************************************************************/
+
+
+@media screen and (max-width: 720px){
+    .carta {
+        min-width: calc(50% - 10px);
+    }
+    #contenedor-proyectos > h2 {
+        padding-bottom: 10px;
+    }
+}

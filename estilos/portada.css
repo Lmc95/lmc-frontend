@@ -1,0 +1,57 @@
+/* Portada, background */
+#contenedor-portada {
+    width: 100%;
+    background-image: url(../img/bg/dark-digital-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffffad;
+    padding: 4% 0;
+    border: 1px solid black;
+    border-top: none;
+}
+.portada {
+    width: 100%;
+    padding: 40px 0;
+}
+/*****************************************/
+/* Logo foto de perfil */
+#columna-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    transition: ease-out .3s;
+}
+.logo:hover {
+    transform: scale(1.05);
+}
+/*******************************************/
+/* Nombre Apellido, rol */
+#nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/********************************************/
+/* REDES */
+.redes {
+    margin-top: 15px;
+}
+.redes a {
+    margin: 5px 8px;
+}
+.redes a img {
+    transition: ease-out .3s;
+}
+.redes a img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        margin-bottom: 20px;
+    }
+}
